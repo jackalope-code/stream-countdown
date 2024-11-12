@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jackalope-code.github.io/stream-countdown",
+  "homepage": "http://jackalope-code.github.io/stream-countdown",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
