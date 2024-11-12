@@ -16,7 +16,7 @@ const FirstStreamBackCountdown = () => {
       <div id="main-header">
         <h1>Countdown to Frogan's return stream</h1>
       </div>
-      <div class="centered-content">
+      <div className="centered-content">
         <h2>November 21st | 5:30 PM PST / 8:30 PM EST | twitch.tv/frogan</h2>
         <FlipClockCountdown to={getFrogansFirstStreamBackDate()}>
           {/* TODO: Put a message and a stream embed here */}
