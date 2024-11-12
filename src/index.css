@@ -5,6 +5,7 @@
     color: white;
     background-color: black;
   }; */
+  --dark-background: rgb(15, 24, 26);
   background-color: var(--barbie-pink);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -21,7 +22,8 @@
 
 h2, h3 {
   color: white;
-  background-color: black;
+  background-color: var(--dark-background);
+  padding: 3px;
 }
 
 #root {
@@ -33,7 +35,10 @@ h2, h3 {
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: black;
+  background-color: var(--dark-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .centered-content {
@@ -45,7 +50,7 @@ h2, h3 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 250px;
+  margin-top: 225px;
 }
 
 a {
@@ -97,4 +102,16 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+span, h1, h2, h3, h4 {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .emilys-candy-regular {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
 } */
