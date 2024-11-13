@@ -13,7 +13,7 @@ function getFrogansFirstStreamBackDate() {
 
 const FirstStreamBackCountdown = () => {
   const twitchPageMockLink = <span className="mock-link">twitch.tv/frogan</span>
-  // const twitchPageLink = <a href="https://twitch.tv/frogan" target="_blank">twitch.tv/frogan</a>;
+  const twitchPageLink = <a href="https://twitch.tv/frogan" target="_blank">twitch.tv/frogan</a>;
 
   return (
     <>
@@ -23,8 +23,10 @@ const FirstStreamBackCountdown = () => {
       <div id="banner-wrapper">
         <div id="banner-container">
           <div id="banner-background"/>
-          <Marquee pauseOnHover={true} autoFill={false}>
-            <div id="marquee-scroll-text">Fr0gan returning to Twitch | {twitchPageMockLink} | November 21st 5:30 PM PST / 8:30 PM EST | Go watch frogan then | {twitchPageMockLink} | Countdown to frogan's live return | Fr0gan will be returning to Twitch live November 21st 5:30 PM PST / 8:30 PM EST |&nbsp;</div>
+          <Marquee>
+            <div id="marquee-scroll-text">Fr0gan returning to Twitch will be returning:30 PM PST / 8:30 PM EST |&nbsp;</div>
+            {twitchPageMockLink}
+            {twitchPageLink}
           </Marquee>
         </div>
       </div>
