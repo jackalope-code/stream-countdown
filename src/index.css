@@ -154,6 +154,12 @@ span, h1, h2, h3, h4 {
   }
 }
 
+@media (max-width:520px) {
+  .centered-content {
+    margin-top: 275px;
+  }
+}
+
 /* @media (max-width:600px) {
   :root {
     word-break: break-all;
