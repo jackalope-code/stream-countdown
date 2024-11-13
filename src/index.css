@@ -5,11 +5,11 @@
   --barbie-green: #5CFB87;
   --barbie-blue: #60C0F7;
   --barbie-blue-hover: #2faef7;
+  --barbie-dark-background: rgb(15, 24, 26);
   /* @property --block-text: {
     color: white;
     background-color: black;
   }; */
-  --dark-background: rgb(15, 24, 26);
   word-wrap: break-word;
   background-color: var(--barbie-pink);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -35,7 +35,7 @@
 
 h2, h3 {
   color: white;
-  background-color: var(--dark-background);
+  background-color: var(--barbie-dark-background);
   padding: 3px 6px;
 }
 
@@ -50,13 +50,13 @@ h2, h3 {
   top: 0;
   width: 100%;
   height: var(--main-header-height-px);
-  background-color: var(--dark-background);
+  background-color: var(--barbie-dark-background);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#banner {
+#banner-wrapper {
   --banner-offset: 100;
   --banner-height: 30px;
   position: absolute;
@@ -66,11 +66,17 @@ h2, h3 {
   letter-spacing: .2rem;
 }
 
-#banner-background {
+#banner-container {
   position: relative;
+}
+
+#banner-background {
+  position: absolute;
   top: 0;
   left: 0;
-  height: min-content;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .centered-content {
@@ -92,6 +98,18 @@ a {
 }
 a:hover, a:visited:hover {
   color: var(--barbie-blue-hover);
+  cursor: pointer;
+}
+
+.mock-link {
+  font-weight: 500;
+  color: var(--barbie-blue);
+  text-decoration: inherit;
+}
+
+.mock-link:hover, .mock-link:visited:hover {
+  color: var(--barbie-blue-hover);
+  cursor: pointer;
 }
 
 /* a:visited {
@@ -114,6 +132,11 @@ span, h1, h2, h3, h4 {
   font-family: "Emilys Candy", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#marquee-scroll-text {
+ font-size: 1.8em;
+ background-color: var(--barbie-dark-background); 
 }
 
 /* .emilys-candy-regular {
