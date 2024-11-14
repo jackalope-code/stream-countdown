@@ -32,18 +32,8 @@ const FirstStreamBackCountdown = () => {
       <div id="banner-wrapper">
         <div id="banner-container">
           <div id="banner-background"/>
-          {/* <Marquee pauseOnHover={true} autoFill={false}>
+          <Marquee pauseOnHover={true} autoFill={false}>
             <div id="marquee-scroll-text">Fr0gan returning to Twitch | {froganPageMockLink} | November 21st 5:30 PM PST / 8:30 PM EST | Go watch frogan then | {froganPageMockLink} | Countdown to frogan's live return | Fr0gan will be returning to Twitch live November 21st 5:30 PM PST / 8:30 PM EST |&nbsp;</div>
-          </Marquee> */}
-          <Marquee pauseOnHover={true} autoFill={false} style={{width: windowWidth}}>
-            <div id="marquee-scroll-text">Fr0gan returning to Twitch |&nbsp;</div>
-            <div id="marquee-scroll-text">{froganPageMockLink} |&nbsp;</div>
-            <div id="marquee-scroll-text">November 21st 5:30 PM PST / 8:30 PM EST |&nbsp;</div>
-            <div id="marquee-scroll-text">Go watch frogan then |&nbsp;</div>
-            <div id="marquee-scroll-text">{froganPageMockLink} |&nbsp;</div>
-            <div id="marquee-scroll-text">Countdown to frogan's live return |&nbsp; </div>
-            <div id="marquee-scroll-text">Fr0gan will be returning to Twitch live&nbsp;</div>
-            <div id="marquee-scroll-text">November 21st 5:30 PM PST / 8:30 PM EST |&nbsp;</div>
           </Marquee>
         </div>
       </div>
