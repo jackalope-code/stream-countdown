@@ -40,7 +40,8 @@ const FirstStreamBackCountdown = () => {
           <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[true, false, false, false]} showSeparators={false}>
           </FlipClockCountdown>
           {/* 1/2 scale size width: "23px", height: "40px" */}
-          <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[false, true, true, true]} digitBlockStyle={{fontSize: "1.5rem", }}>
+          {/* <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[false, true, true, true]} digitBlockStyle={{fontSize: "1.5rem", }}> */}
+          <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[false, true, true, true]}>
             {/* TODO: Put a message and a stream embed here */}
             <p>Time's up!!! Go watch frogan at {froganPageLink}!!!</p>
           </FlipClockCountdown>
