@@ -40,7 +40,7 @@ const FirstStreamBackCountdown = () => {
       <div className="centered-content">
         {/* query="(min-device-width: 366; max-device-width: 520px"> */}
         <MediaQuery maxWidth="365px">
-          <DebugPrint text={'Rendering small mobile view (max 365px)'} />
+          <DebugPrint text={'Rendering small device view (max 365px)'} />
           <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[true, false, false, false]} showSeparators={false}>
           </FlipClockCountdown>
           {/* 1/2 scale size width: "23px", height: "40px" */}
@@ -59,8 +59,7 @@ const FirstStreamBackCountdown = () => {
           </FlipClockCountdown>
         </MediaQuery>
         <MediaQuery minWidth="366px" maxWidth="520px">
-        <DebugPrint text={'Rendering medium device view (min 366px, max 520px)'} />
-          <DebugPrint text={'Rendering mobile view'} />
+          <DebugPrint text={'Rendering medium device view (min 366px, max 520px)'} />
           <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[true, false, false, false]} showSeparators={false}>
           </FlipClockCountdown>
           {/* 1/2 scale size width: "23px", height: "40px" */}
@@ -71,7 +70,7 @@ const FirstStreamBackCountdown = () => {
           </FlipClockCountdown>
         </MediaQuery>
         <MediaQuery query="(min-device-width: 521px">
-        <DebugPrint text={'Rendering larger device view (>=521px)'} />
+          <DebugPrint text={'Rendering larger device view (>=521px)'} />
           <FlipClockCountdown to={getFrogansFirstStreamBackDate()}>
             {/* TODO: Put a message and a stream embed here */}
             <p>Time's up!!! Go watch frogan at {froganPageLink}!!!</p>
