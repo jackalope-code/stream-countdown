@@ -4,12 +4,17 @@ import Marquee from 'react-fast-marquee';
 import MediaQuery from 'react-responsive';
 
 function getFrogansFirstStreamBackDate() {
-  let date = new Date();
+  const date = new Date();
   date.setUTCMonth(10);
   date.setUTCDate(22);
   date.setUTCHours(1, 30, 0);
   console.log("CALCULATED START DATE/TIME IN LOCAL TIMEZONE: " + date.toDateString() + " " + date.toLocaleTimeString("en-US", {hour12: true}));
   return date;
+}
+
+const DebugPrint: React.FC<{text: string}> = ({text}) => {
+  console.log(text);
+  return <></>
 }
 
 const FirstStreamBackCountdown = () => {
@@ -31,9 +36,11 @@ const FirstStreamBackCountdown = () => {
       </div>
       <div className="centered-content">
         <MediaQuery query="(max-device-width: 520px">
+          <DebugPrint text={'Rendering mobile view'} />
           <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[true, false, false, false]} showSeparators={false}>
           </FlipClockCountdown>
-          <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[false, true, true, true]} digitBlockStyle={{fontSize: "1.5rem", width: "23px", height: "40px"}}>
+          {/* 1/2 scale size width: "23px", height: "40px" */}
+          <FlipClockCountdown to={getFrogansFirstStreamBackDate()} renderMap={[false, true, true, true]} digitBlockStyle={{fontSize: "1.5rem", }}>
             {/* TODO: Put a message and a stream embed here */}
             <p>Time's up!!! Go watch frogan at {froganPageLink}!!!</p>
           </FlipClockCountdown>

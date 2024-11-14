@@ -74,7 +74,7 @@ h2, h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   z-index: 10;
 }
@@ -158,6 +158,10 @@ span, h1, h2, h3, h4 {
   .centered-content {
     margin-top: 275px;
   }
+
+  /* h1 {
+    font-size: 2em;
+  } */
 }
 
 /* @media (max-width:600px) {
