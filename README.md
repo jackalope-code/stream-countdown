@@ -4,6 +4,7 @@
 
 # Checklist
 * Countdown to 0 shows link or embed properly
+  * Link could be improved (bigger, more contrast, block)
 * Mobile works well
 * Review marquee functionality
 * Review embed
@@ -11,6 +12,8 @@
 # Review
 * Remove days when at 0 and just do hours minutes seconds? or make them bigger?
 * Checklist
+* Emojis?
+* Make alternate versions?
 
 # Notes
 * Add a twitch stream embed on countdown (I guess from some PUBLIC OAuth login credential flow... incredible embed moment there)

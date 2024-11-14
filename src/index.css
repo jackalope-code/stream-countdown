@@ -23,6 +23,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+
+  min-width: 0;
+}
+
+body, html {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x:visible;
+  scroll-behavior: none;
 }
 
 ::selection {
@@ -109,7 +119,7 @@ a:hover, a:visited:hover {
 
 .mock-link:hover, .mock-link:visited:hover {
   color: var(--barbie-blue-hover);
-  cursor: pointer;
+  cursor: copy;
 }
 
 /* a:visited {
@@ -163,6 +173,16 @@ span, h1, h2, h3, h4 {
     font-size: 2em;
   } */
 }
+
+/* @media (max-width:365px) {
+  .centered-content {
+    margin-top: 275px;
+  }
+
+  /* h1 {
+    font-size: 2em;
+  }
+} */
 
 /* @media (max-width:600px) {
   :root {
