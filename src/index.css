@@ -139,9 +139,9 @@ h2 {
 }
 
 span, h1, h2, h3, h4 {
-  font-family: "Emilys Candy", serif;
+  font-family: "Griffy", serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; 
 }
 
 #marquee-scroll-text {
@@ -149,11 +149,12 @@ span, h1, h2, h3, h4 {
  background-color: var(--barbie-dark-background); 
 }
 
-/* .emilys-candy-regular {
-  font-family: "Emilys Candy", serif;
+/* .griffy-regular {
+  font-family: "Griffy", serif;
   font-weight: 400;
   font-style: normal;
 } */
+
 
 @media (max-width:600px) {
   #main-header {
