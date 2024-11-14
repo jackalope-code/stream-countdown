@@ -1,13 +1,17 @@
 
 # To-Do
+* Add an escape button for Sabrina
 * Mobile fixes
+  * Try a branch that has the scroll bar moved up??? (WIP... make it a published named branch)
+* Countdown to 0 shows link or embed properly
+  * Link should be improved (bigger, more contrast, block)
 
 # Checklist
-* Countdown to 0 shows link or embed properly
-  * Link could be improved (bigger, more contrast, block)
-* Mobile works well
-* Review marquee functionality
-* Review embed
+* To-Do (see above)
+* Other
+  * Mobile works well
+  * Review marquee functionality
+  * Review embed
 
 # Review
 * Remove days when at 0 and just do hours minutes seconds? or make them bigger?
@@ -27,6 +31,6 @@
   * Fixing pausing to work again properly on mouseover on the marquee would be nice
   * Having selection work for individual parts of the marquee would be nice (see breaking up the marquee in To-Do)
 
-# Completed
+# Done
 * Added flip clock countdown
 * Added scrolling marquee with text
