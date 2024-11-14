@@ -119,7 +119,7 @@ a:hover, a:visited:hover {
 
 .mock-link:hover, .mock-link:visited:hover {
   color: var(--barbie-blue-hover);
-  cursor: copy;
+  cursor: inherit;
 }
 
 /* a:visited {
